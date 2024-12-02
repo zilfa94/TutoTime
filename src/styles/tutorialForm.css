@@ -1,0 +1,239 @@
+.tutorial-form-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--input-background);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+}
+
+.tutorial-form-container h2 {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.tutorial-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.form-section {
+  background: var(--input-background);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-section h3 {
+  margin: 0 0 1.5rem 0;
+  color: var(--text-primary);
+  font-size: 1.25rem;
+}
+
+.form-field {
+  margin-bottom: 1.5rem;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.form-field input[type="text"],
+.form-field input[type="number"],
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--background-color);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+}
+
+.form-field textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.file-upload {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-upload:hover {
+  background: var(--primary-color-dark);
+}
+
+.file-upload.uploading {
+  background: var(--text-secondary);
+  cursor: not-allowed;
+  animation: pulse 1.5s infinite;
+}
+
+.file-upload input[type="file"] {
+  display: none;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.thumbnail-preview,
+.step-image-preview {
+  display: block;
+  max-width: 200px;
+  margin: 10px 0;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.step-item {
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.step-item h4 {
+  margin: 0 0 1.5rem 0;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.remove-step {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: #ef4444;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.remove-step:hover {
+  background: #ef4444;
+  color: white;
+  border-color: #ef4444;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.form-actions button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-step {
+  background: var(--button-background);
+  color: white;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.add-step:hover {
+  background: var(--button-hover);
+}
+
+.submit-form {
+  background: var(--accent-color);
+  color: white;
+}
+
+.submit-form:hover {
+  background: var(--button-hover);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button-primary {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+}
+
+.button-primary:hover {
+  background: var(--button-hover);
+}
+
+.button-outline {
+  background: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.button-outline:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+.button-danger {
+  background: transparent;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+}
+
+.button-danger:hover {
+  background: #ef4444;
+  color: white;
+}
+
+.error-message {
+  background: #ef4444;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
